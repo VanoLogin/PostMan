@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PostMan</title>
+    <link
+      href="https://rawgit.com/summerstyle/jsonTreeViewer/master/libs/jsonTree/jsonTree.css"
+      rel="stylesheet"
+    />
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/notiflix@3.2.7/src/notiflix.min.css
+    "
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="header">Postman</h1>
+    <div class="container">
+      <div class="type-request">
+        Type of request: <span id="type" class="request-span"></span>
+      </div>
+      <div class="request-link">
+        Link on request: <span id="request" class="request-span"></span>
+      </div>
+      <form class="form-submit" id="form-submit">
+        <div class="container-type">
+          <label for="type-request">TYPE</label>
+          <select id="type-request" name="type-request">
+            <option value="GET" selected>GET</option>
+            <option value="POST">POST</option>
+            <option value="DELETE">DELETE</option>
+            <option value="PUT">PUT</option>
+          </select>
+        </div>
+        <div class="container-wrap">
+          <label class="link-input">
+            Put your link
+            <input type="text" name="input-link" id="input-link" />
+          </label>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <div class="update-container">
+        <form action="" id="textarea-form">
+          <textarea
+            id="textAreaValue"
+            rows="20"
+            cols="100"
+            style="padding-left: 20px; padding-top: 20px"
+          >
+          </textarea>
+        </form>
+      </div>
+      <div class="request-data">
+        <ul>
+          <li>Status: <span id="status" class="request-span"></span></li>
+          <li>Size: <span id="size" class="request-span"></span></li>
+          <li>Time: <span id="time" class="request-span"></span></li>
+        </ul>
+      </div>
+
+      <div class="data-container" id="data-container">
+        <h3 class="bad-request hidden">No data</h3>
+      </div>
+    </div>
+    <script src="
+https://cdn.jsdelivr.net/npm/notiflix@3.2.7/dist/notiflix-aio-3.2.7.min.js
+"></script>
+    <script src="https://rawgit.com/summerstyle/jsonTreeViewer/master/libs/jsonTree/jsonTree.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+li {
+  list-style: none;
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  /* background-color: rgb(22, 24, 24); */
+}
+
+.header {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.container {
+  display: block;
+  margin-left: 50px;
+}
+
+.link-input {
+  width: 600px;
+  text-transform: uppercase;
+}
+.request-data {
+  margin-top: 30px;
+}
+.type-request {
+  margin-bottom: 20px;
+}
+.request-link {
+  margin-bottom: 20px;
+}
+.input-group {
+  margin-top: 2px;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+input {
+  padding: 10px;
+  font-family: inherit;
+  border-radius: 5px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+select {
+  height: 38px;
+  border-radius: 5px;
+  border: 2px solid #303030;
+}
+.form-submit {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.btn-submit {
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: inherit;
+  border-radius: 5px;
+  border: 2px solid #303030;
+  height: 38px;
+  margin-top: 25px;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.btn-submit:hover {
+  background-color: chocolate;
+  color: white;
+}
+
+.request-span {
+  color: rgb(116, 40, 40);
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+table {
+  width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+.input-placeholder {
+  width: 500px;
+  border-radius: 10px;
+  
+}
+
+.update-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.bad-request {
+  margin-top: 20px;
+  background-color:rgb(116, 40, 40);
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+.hidden {
+  display: none;
+}
